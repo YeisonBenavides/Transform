@@ -1,0 +1,968 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  position: relative;
+  background-color: rgb(28, 145, 192);
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+nav ul li a{
+  display: inline-block;
+  padding: 20px 25px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size:18px;
+}
+.active{
+  background-color:rgb(25, 85, 109);
+  border-bottom: solid white;
+}
+article{
+  background-color: rgb(240, 222, 68);
+  width: 1441px;
+  height: 160px;
+  position: absolute;
+  margin: auto;
+  text-align: center;
+}
+article>div{
+  display: inline-block;
+  padding: 65px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size:35px;
+}
+header{
+  background-color: cadetblue;
+  position: absolute;
+  width: 1441px;
+  height: 500px;
+  top: 225px;
+  margin: auto;
+  overflow: hidden;  
+}
+section{
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  margin: 80px auto auto 150px;
+  overflow: hidden;
+}
+section>img{
+  width: 500px;
+  height: 350px;
+  margin: auto;
+  transition: all .3s linear;
+}
+section:hover>img{
+  transform: scale(1.4);
+}
+aside{
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: rgba(100%, 48.7%, 0%, .4);
+  transform: scale(0);
+  text-align: center;
+  transition: all .4s linear;
+}
+section:hover>aside{
+  transform: scale(1);
+}
+section>aside>h1{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 50px;
+  transform: translateY(-80px);
+  transition: all .5s linear;
+  transition-delay: .4s;
+}
+section:hover>aside>h1{
+  transform: translateY(0);
+  color: rgba(255, 255, 255, 1);
+}
+aside>p{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 30px;
+  margin-bottom: 250px;
+  transform: translateY(80px);
+  transition: all .5s linear;
+  transition-delay: .4s;
+}
+section:hover>aside>p{
+  transform: translateY(0);
+  color: rgba(255, 255, 255, 1);
+}
+section:hover>aside>a{
+  position: absolute;
+  padding: 10px;
+  width: 80px;
+  height: 25px;
+  bottom:75px;
+  right: 200px;
+  background-color: gold;
+  overflow: hidden;
+  transform: scale(0);
+  transition: all .1s linear;
+  transition-delay: .1s;
+  text-align: center;
+  cursor: pointer;
+}
+section:hover>aside>a{
+  transform: scale(1);
+}
+
+main{
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  margin: 80px auto auto 750px;
+  overflow: hidden;
+}
+main>img{
+  width: 500px;
+  height: 350px;
+  margin: auto;
+  transition: all .3s linear;
+}
+main:hover>img{
+  transform: scale(1.4);
+}
+aside{
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: rgba(100%, 48.7%, 0%, .4);
+  transform: scale(0);
+  text-align: center;
+  transition: all .4s linear;
+}
+main:hover>aside{
+  transform: scale(1);
+}
+main>aside>h1{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 50px;
+  transform: translateY(-80px);
+  transition: all .5s linear;
+  transition-delay: .4s;
+}
+main:hover>aside>h1{
+  transform: translateY(0);
+  color: rgba(255, 255, 255, 1);
+}
+aside>p{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 30px;
+  margin-bottom: 250px;
+  transform: translateY(80px);
+  transition: all .5s linear;
+  transition-delay: .4s;
+}
+main:hover>aside>p{
+  transform: translateY(0);
+  color: rgba(255, 255, 255, 1);
+}
+main:hover>aside>a{
+  position: absolute;
+  padding: 10px;
+  width: 80px;
+  height: 25px;
+  bottom:75px;
+  right: 200px;
+  background-color: gold;
+  overflow: hidden;
+  transform: scale(0);
+  transition: all .1s linear;
+  transition-delay: .1s;
+  text-align: center;
+  cursor: pointer;
+}
+main:hover>aside>a{
+  transform: scale(1);
+}
+
+/*Transform 2 */
+.transform2{
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  margin: 80px auto auto 150px;
+  overflow: hidden;
+}
+.transform2>img{
+  width: 500px;
+  height: 350px;
+  margin: auto;
+  transition: all .3s linear;
+}
+.transform2:hover>img{
+  transform: scale(1.4);
+}
+.mascara2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 350px;
+  background-color: rgba(57, 191, 235, 0.521);
+  transform: scale(1);
+  transition: all .4s;
+  text-align: center;
+  transform: rotate(90deg) translateY(-425px) translateX(425px);
+  overflow: hidden;
+  transition: all .5s linear;
+}
+.transform2:hover>.mascara2{
+  transform: rotate(0) translateY(0) translateX(0);
+}
+.transform2>.mascara2>h2{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 30px;
+  transform: rotate(0deg) translateY(-42px) translateX(425px);
+  transition: all .3s linear;
+  transition-delay: .5s;
+}
+.transform2:hover>.mascara2>h2{
+  transform: rotate(0) translateY(0) translateX(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara2>pp{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 400px;
+  transform: translateY(40px) translateX(-40px);
+  transition: all .5s linear;
+  transition-delay: .4s;
+  display: block;
+  margin-block-start: 2em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.transform2:hover>.mascara2>pp{
+  transform: translateY(0) translateX(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara2>aa{
+  font-family: 'Oswald' , sans-serif;
+  margin-top: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: gold;
+  padding: 15px 25px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all .4s linear;
+  transition-delay: .4s;
+  cursor: pointer;
+}
+.transform2:hover>.mascara2>aa{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.transformx2{
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  margin: 80px auto auto 750px;
+  overflow: hidden;
+}
+.transformx2>img{
+  width: 500px;
+  height: 350px;
+  margin: auto;
+  transition: all .3s linear;
+}
+.transformx2:hover>img{
+  transform: scale(1.4);
+}
+.mascara2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 350px;
+  background-color: rgba(57, 191, 235, 0.521);
+  transform: scale(1);
+  transition: all .4s;
+  text-align: center;
+  transform: rotate(90deg) translateY(-425px) translateX(425px);
+  overflow: hidden;
+  transition: all .5s linear;
+}
+.transformx2:hover>.mascara2{
+  transform: rotate(0) translateY(0) translateX(0);
+}
+.transformx2>.mascara2>h2{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 30px;
+  transform: rotate(0deg) translateY(-42px) translateX(425px);
+  transition: all .3s linear;
+  transition-delay: .5s;
+}
+.transformx2:hover>.mascara2>h2{
+  transform: rotate(0) translateY(0) translateX(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara2>pp{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 400px;
+  transform: translateY(40px) translateX(-40px);
+  transition: all .5s linear;
+  transition-delay: .4s;
+  display: block;
+  margin-block-start: 2em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.transformx2:hover>.mascara2>pp{
+  transform: translateY(0) translateX(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara2>aa{
+  font-family: 'Oswald' , sans-serif;
+  margin-top: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: gold;
+  padding: 15px 25px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all .4s linear;
+  transition-delay: .4s;
+  cursor: pointer;
+}
+.transformx2:hover>.mascara2>aa{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*Transform 3*/
+.transform3{
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  margin: 80px auto auto 150px;
+  overflow: hidden;
+}
+.transform3>img{
+  width: 500px;
+  height: 350px;
+  margin: auto;
+  transition: all .3s linear;
+}
+.transform3:hover>img{
+  transform: scale(1.4);
+}
+.mascara3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 350px;
+  background-color: rgba(193, 88, 241, 0.521);
+  transform: scale(1);
+  transition: all .4s;
+  text-align: center;
+  transform: rotate(90deg) translateY(-425px) translateX(-425px);
+  overflow: hidden;
+  transition: all .5s linear;
+}
+.transform3:hover>.mascara3{
+  transform: rotate(0) translateY(0) translateX(0);
+}
+.transform3>.mascara3>h3{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 50px;
+  transform: rotate(90deg) translateY(425px) translateX(-425px);
+  transition: all .2s linear;
+  transition-delay: .5s;
+}
+.transform3:hover>.mascara3>h3{
+  transform: rotate(0) translateY(0) translateX(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara3>ppp{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 400px;
+  transform: translateY(-42px) translateX(425px);
+  transition: all .3s linear;
+  transition-delay: .5s;
+  display: block;
+  margin-block-start: 2em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.transform3:hover>.mascara3>ppp{
+  transform: translateY(0) translateX(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara3>aaa{
+  font-family: 'Oswald' , sans-serif;
+  margin-top: 50px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: gold;
+  padding: 15px 25px;
+  opacity: 0;
+  transform: translateY(-200px);
+  transition: all .4s linear;
+  transition-delay: .4s;
+  cursor: pointer;
+}
+.transform3:hover>.mascara3>aaa{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.transformx3>.mascara3>h3{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 50px;
+  transform: rotate(90deg) translateY(425px) translateX(-425px);
+  transition: all .2s linear;
+  transition-delay: .5s;
+}
+.transformx3:hover>.mascara3>h3{
+  transform: rotate(0) translateY(0) translateX(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara3>ppp{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 400px;
+  transform: translateY(-42px) translateX(425px);
+  transition: all .3s linear;
+  transition-delay: .5s;
+  display: block;
+  margin-block-start: 2em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.transformx3:hover>.mascara3>ppp{
+  transform: translateY(0) translateX(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara3>aaa{
+  font-family: 'Oswald' , sans-serif;
+  margin-top: 50px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: gold;
+  padding: 15px 25px;
+  opacity: 0;
+  transform: translateY(-200px);
+  transition: all .4s linear;
+  transition-delay: .4s;
+  cursor: pointer;
+}
+.transformx3:hover>.mascara3>aaa{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*Transform 4*/
+.transform4{
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  margin: 80px auto auto 150px;
+  overflow: hidden;
+}
+.transform4>img{
+  width: 500px;
+  height: 350px;
+  margin: auto;
+  transition: all .3s linear;
+}
+.transform4:hover>img{
+  transform: scale(1.4);
+}
+.mascara4{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 350px;
+  background-color: rgba(137, 228, 76, 0.315);
+  transform: scale(1);
+  transition: all .4s;
+  text-align: center;
+  transform: rotate(720deg) scale(0);
+  overflow: hidden;
+  transition: all .3s linear;
+}
+.transform4:hover>.mascara4{
+  transform: rotate(0) scale(1);
+}
+.transform4>.mascara4>h4{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 50px;
+  transform: rotate(1deg) translateY(-10px) translateX(425px);
+  transition: all .4s linear;
+  transition-delay: .5s;
+}
+.transform4:hover>.mascara4>h4{
+  transform: rotate(0) translateY(0) translateX(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara4>pppp{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 400px;
+  transform: rotate(1deg) translateY(10px) translateX(-425px);
+  transition: all .3s linear;
+  transition-delay: .5s;
+  display: block;
+  margin-block-start: 2em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.transform4:hover>.mascara4>pppp{
+  transform: translateY(0) translateX(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara4>aaaa{
+  font-family: 'Oswald' , sans-serif;
+  margin-top: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: gold;
+  padding: 15px 25px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all .4s linear;
+  transition-delay: .4s;
+  cursor: pointer;
+}
+.transform4:hover>.mascara4>aaaa{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mascara4{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 350px;
+  background-color: rgba(137, 228, 76, 0.315);
+  transform: scale(1);
+  transition: all .4s;
+  text-align: center;
+  transform: rotate(720deg) scale(0);
+  overflow: hidden;
+  transition: all .3s linear;
+}
+.transformx4:hover>.mascara4{
+  transform: rotate(0) scale(1);
+}
+.transformx4>.mascara4>h4{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 50px;
+  transform: rotate(1deg) translateY(-10px) translateX(425px);
+  transition: all .4s linear;
+  transition-delay: .5s;
+}
+.transformx4:hover>.mascara4>h4{
+  transform: rotate(0) translateY(0) translateX(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara4>pppp{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 400px;
+  transform: rotate(1deg) translateY(10px) translateX(-425px);
+  transition: all .3s linear;
+  transition-delay: .5s;
+  display: block;
+  margin-block-start: 2em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.transformx4:hover>.mascara4>pppp{
+  transform: translateY(0) translateX(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara4>aaaa{
+  font-family: 'Oswald' , sans-serif;
+  margin-top: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: gold;
+  padding: 15px 25px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all .4s linear;
+  transition-delay: .4s;
+  cursor: pointer;
+}
+.transformx4:hover>.mascara4>aaaa{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*Transform 5*/
+.transform5{
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  margin: 80px auto auto 150px;
+  overflow: hidden;
+}
+.transform5>img{
+  width: 500px;
+  height: 350px;
+  margin: auto;
+  transition: all .3s linear;
+}
+.transform5:hover>img{
+  transform: scale(1.4);
+}
+.mascara5{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 350px;
+  background-color: rgba(54, 90, 190, 0.315);
+  transform: scale(1);
+  transition: all .4s;
+  text-align: center;
+  transform: translateY(350px) translateX(-500px);
+  overflow: hidden;
+  transition: all .3s linear;
+}
+.transform5:hover>.mascara5{
+  transform: translateY(0) translateX(0);
+}
+.transform5>.mascara5>h5{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 50px;
+  transform: rotate(360deg);
+  transition: all .4s linear;
+  transition-delay: .5s;
+}
+.transform5:hover>.mascara5>h5{
+  transform: rotate(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara5>ppppp{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 400px;
+  transform: translateY(40px) translateX(-40px);
+  transition: all .5s linear;
+  transition-delay: .9s;
+  display: block;
+  margin-block-start: 2em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.transform5:hover>.mascara5>ppppp{
+  transform: translateY(0) translateX(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara5>aaaaa{
+  font-family: 'Oswald' , sans-serif;
+  margin-top: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: gold;
+  padding: 15px 25px;
+  opacity: 0;
+  transform: rotate(360deg);
+  transition: all .5s linear;
+  transition-delay: .9s;
+  cursor: pointer;
+}
+.transform5:hover>.mascara5>aaaaa{
+  opacity: 1;
+  transform: rotate(0);
+}
+
+.transformx5>.mascara5>h5{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 50px;
+  transform: rotate(360deg);
+  transition: all .4s linear;
+  transition-delay: .5s;
+}
+.transformx5:hover>.mascara5>h5{
+  transform: rotate(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascarax5>ppppp{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 400px;
+  transform: translateY(40px) translateX(-40px);
+  transition: all .5s linear;
+  transition-delay: .9s;
+  display: block;
+  margin-block-start: 2em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.transformx5:hover>.mascara5>ppppp{
+  transform: translateY(0) translateX(0);
+  color: rgba(255, 255, 255, 1);
+}
+.mascarax5>aaaaa{
+  font-family: 'Oswald' , sans-serif;
+  margin-top: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: gold;
+  padding: 15px 25px;
+  opacity: 0;
+  transform: rotate(360deg);
+  transition: all .5s linear;
+  transition-delay: .9s;
+  cursor: pointer;
+}
+.transformx5:hover>.mascara5>aaaaa{
+  opacity: 1;
+  transform: rotate(0);
+}
+
+/*Transform 6*/
+.transform6{
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  margin: 80px auto auto 150px;
+  overflow: hidden;
+}
+.transform6>img{
+  width: 500px;
+  height: 350px;
+  margin: auto;
+  transition: all .3s linear;
+}
+.transform6:hover>img{
+  transform: scale(1.4);
+}
+.mascara6{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 350px;
+  background-color: orangered;
+  transform: scale(0);
+  transition: all .5s;
+  text-align: center; 
+  overflow: hidden;
+  transition: all .3s linear;
+}
+.transform6:hover>.mascara6{
+  transform: scale(1);
+}
+.transform6>.mascara6>h6{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 50px;
+  transform: scale(0);
+  transition: all .3s linear;
+  transition-delay: .5s;
+}
+.transform6:hover>.mascara6>h6{
+  transform: scale(1);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara6>pppppp{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 400px;
+  transform: scale(0);
+  transition: all .3s linear;
+  transition-delay: .5s;
+  display: block;
+  margin-block-start: 2em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.transform6:hover>.mascara6>pppppp{
+  transform: scale(1);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara6>aaaaaa{
+  font-family: 'Oswald' , sans-serif;
+  margin-top: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: gold;
+  padding: 15px 25px;
+  opacity: 0;
+  transform: rotate(360deg);
+  transition: all .3s linear;
+  transition-delay: .5s;
+  cursor: pointer;
+}
+.transform6:hover>.mascara6>aaaaaa{
+  opacity: 1;
+  transform: rotate(0);
+}
+
+.mascara6{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 350px;
+  background-color: orangered;
+  transform: scale(0);
+  transition: all .5s;
+  text-align: center; 
+  overflow: hidden;
+  transition: all .3s linear;
+}
+.transformx6:hover>.mascara6{
+  transform: scale(1);
+}
+.transformx6>.mascara6>h6{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 50px;
+  transform: scale(0);
+  transition: all .3s linear;
+  transition-delay: .5s;
+}
+.transformx6:hover>.mascara6>h6{
+  transform: scale(1);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara6>pppppp{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0);
+  margin-top: 400px;
+  transform: scale(0);
+  transition: all .3s linear;
+  transition-delay: .5s;
+  display: block;
+  margin-block-start: 2em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.transformx6:hover>.mascara6>pppppp{
+  transform: scale(1);
+  color: rgba(255, 255, 255, 1);
+}
+.mascara6>aaaaaa{
+  font-family: 'Oswald' , sans-serif;
+  margin-top: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: gold;
+  padding: 15px 25px;
+  opacity: 0;
+  transform: rotate(360deg);
+  transition: all .3s linear;
+  transition-delay: .5s;
+  cursor: pointer;
+}
+.transformx6:hover>.mascara6>aaaaaa{
+  opacity: 1;
+  transform: rotate(0);
+}
